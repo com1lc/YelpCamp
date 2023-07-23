@@ -1,7 +1,7 @@
 <% layout('layouts/boilerplate')%>
 <div class="row">
     <h1 class="text-center">New Campground</h1>
-    <div class="col-5 offset-3">
+    <div class="col-6 offset-3">
         <form
             action="/campgrounds"
             method="POST"
@@ -20,7 +20,7 @@
                 <div class="valid-feedback">Looks good!</div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="location">Lacation</label>
+                <label class="form-label" for="location">Location</label>
                 <input
                     class="form-control"
                     type="text"
@@ -31,7 +31,7 @@
                 <div class="valid-feedback">Looks good!</div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="image">Image URL</label>
+                <label class="form-label" for="image">Image Url</label>
                 <input
                     class="form-control"
                     type="text"
@@ -49,15 +49,16 @@
                         type="text"
                         class="form-control"
                         id="price"
-                        placeholder="0.0"
+                        placeholder="0.00"
                         aria-label="price"
                         aria-describedby="price-label"
                         name="campground[price]"
                         required
                     />
-                    <div class="valid-feedback">Looks good!</div>
                 </div>
+                <div class="valid-feedback">Looks good!</div>
             </div>
+
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
                 <textarea
@@ -72,8 +73,7 @@
             <div class="mb-3">
                 <button class="btn btn-success">Add Campground</button>
             </div>
-
-            <a href="/campgrounds">All Campgrounds</a>
         </form>
+        <a href="/campgrounds">All Campgrounds</a>
     </div>
 </div>
